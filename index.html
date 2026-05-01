@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Mystery Awaits...</title>
+    <meta name="description" content="A mysterious journey step by step.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app-container">
+        <div class="instructions fade-in">Click to reveal the next clue...</div>
+
+        <div class="image-wrapper" id="image-container">
+            <img id="mystery-image" src="assets/image1.png" alt="Mystery Clue">
+            <div class="glow-effect"></div>
+        </div>
+
+        <!-- Proposal Modal -->
+        <div id="proposal-modal" class="modal hidden">
+            <div class="modal-content glass-effect">
+                <h1 class="proposal-text">Merlin, Will You Marry Me?</h1>
+                <p class="proposal-subtext">My heart belongs to you, now and forever.</p>
+                <div class="button-group">
+                    <button id="yes-btn" class="btn primary-btn">Yes!</button>
+                    <button id="no-btn" class="btn secondary-btn">No</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success overlay after saying Yes -->
+        <div id="success-overlay" class="overlay hidden">
+            <div class="success-content">
+                <h2>Forever Begins Now ✨</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
